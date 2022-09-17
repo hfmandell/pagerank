@@ -104,7 +104,6 @@ class WebGraph():
 
         else:
             v = torch.zeros(n)
-            print(f"v: {v}")
 
             # for each index in the personalization vector:
             for i, element in enumerate(v):
