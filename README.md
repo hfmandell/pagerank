@@ -1,13 +1,6 @@
-# Pagerank Project
+# Pagerank
 
-In this project, you will create a simple search engine for the website <https://www.lawfareblog.com>.
-This website provides legal analysis on US national security issues.
-
-**Due date:** Sunday, 18 September at midnight
-
-**Computation:**
-This project has low computational requirements.
-You are not required to complete it on the lambda server (although you are welcome to if you'd like).
+Creating a simple search engine for the website <https://www.lawfareblog.com>. The website provides legal analysis on US national security issues.
 
 ## Background
 
@@ -2773,24 +2766,6 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
 1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
 
 1. Get at least 5 stars on your repo.
-   (You made trade stars with other students in the class.)
-
-   > **NOTE:**
-   > 
-   > Recruiters use github profiles to determine who to hire,
-   > and pagerank is used to rank user profiles and projects.
-   > Links in this graph correspond to who has starred/followed who's repo.
-   > By getting more stars on your repo, you'll be increasing your github pagerank, which increases the likelihood that recruiters will hire you.
-   > To see an example, [perform a search for `data mining`](https://github.com/search?q=data+mining).
-   > Notice that the results are returned "approximately" ranked by the number of stars,
-   > but because "some stars count more than others" the results are not exactly ranked by the number of stars.
-   > (I asked you not to fork this repo because forks are ranked lower than non-forks.)
-   >
-   > In some sense, we are doing a "dual problem" to data mining by getting these stars.
-   > Recruiters are using data mining to find out who the best people to recruit are,
-   > and we are hacking their data mining algorithms by making those algorithms select you instead of someone else.
-   >
-   > If you're interested in exploring this idea further, here's a python tutorial for extracting GitHub's social graph: <https://www.oreilly.com/library/view/mining-the-social/9781449368180/ch07.html> ; if you're interested in learning more about how recruiters use github profiles, read this Hacker News post: <https://news.ycombinator.com/item?id=19413348>.
 
 1. Submit the url of your repo to sakai.
 
