@@ -440,7 +440,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=28 residual=0.002947412896901369
    DEBUG:root:i=29 residual=0.0024798011872917414
    DEBUG:root:i=30 residual=0.002086422871798277
-   DEBUG:root:i=31 residual=0.0017551911296322942
+   DEBUG:root:i=31 residual=0.001755191246047616
    DEBUG:root:i=32 residual=0.0014767624670639634
    DEBUG:root:i=33 residual=0.0012423915322870016
    DEBUG:root:i=34 residual=0.0010452595306560397
@@ -484,79 +484,78 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=72 residual=1.3902072169003077e-06
    DEBUG:root:i=73 residual=1.244581540049694e-06
    DEBUG:root:i=74 residual=9.97376446321141e-07
-   INFO:root:rank=0 pagerank=2.1634e+00 url=4
-   INFO:root:rank=1 pagerank=1.6664e+00 url=6
-   INFO:root:rank=2 pagerank=1.2402e+00 url=5
-   INFO:root:rank=3 pagerank=4.5712e-01 url=2
-   INFO:root:rank=4 pagerank=3.5620e-01 url=3
-   INFO:root:rank=5 pagerank=3.2078e-01 url=1
+   INFO:root:rank=0 ranking=2.1634e+00 url=4
+   INFO:root:rank=1 ranking=1.6664e+00 url=6
+   INFO:root:rank=2 ranking=1.2402e+00 url=5
+   INFO:root:rank=3 ranking=4.5712e-01 url=2
+   INFO:root:rank=4 ranking=3.5620e-01 url=3
+   INFO:root:rank=5 ranking=3.2078e-01 url=1
    ```
 
    Task 1, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
-   INFO:root:rank=0 pagerank=4.5861e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
-   INFO:root:rank=1 pagerank=4.0460e-03 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
-   INFO:root:rank=2 pagerank=2.6116e-03 url=www.lawfareblog.com/britains-coronavirus-response
-   INFO:root:rank=3 pagerank=2.5390e-03 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
-   INFO:root:rank=4 pagerank=2.3557e-03 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
-   INFO:root:rank=5 pagerank=2.2895e-03 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
-   INFO:root:rank=6 pagerank=2.2727e-03 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
-   INFO:root:rank=7 pagerank=2.2520e-03 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
-   INFO:root:rank=8 pagerank=2.1878e-03 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
-   INFO:root:rank=9 pagerank=2.0339e-03 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
+   INFO:root:rank=0 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+   INFO:root:rank=1 ranking=0.0000e+00 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+   INFO:root:rank=2 ranking=0.0000e+00 url=www.lawfareblog.com/britains-coronavirus-response
+   INFO:root:rank=3 ranking=0.0000e+00 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
+   INFO:root:rank=4 ranking=0.0000e+00 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
+   INFO:root:rank=5 ranking=0.0000e+00 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
+   INFO:root:rank=6 ranking=0.0000e+00 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
+   INFO:root:rank=7 ranking=0.0000e+00 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
+   INFO:root:rank=8 ranking=0.0000e+00 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
+   INFO:root:rank=9 ranking=0.0000e+00 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
-   INFO:root:rank=0 pagerank=6.6243e-02 url=www.lawfareblog.com
-   donald-trump-and-politically-weaponized-executive-branch
-   INFO:root:rank=1 pagerank=6.0194e-02 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-   INFO:root:rank=2 pagerank=3.4969e-02 url=www.lawfareblog.com/trump-administrations-worrying-new-policy-israeli-settlements
-   INFO:root:rank=3 pagerank=3.2193e-02 url=www.lawfareblog.com/document-trump-revokes-obama-executive-order-counterterrorism-strike-casualty-reporting
-   INFO:root:rank=4 pagerank=3.0971e-02 url=www.lawfareblog.com/dc-circuit-overrules-district-courts-due-process-ruling-qasim-v-trump
-   INFO:root:rank=5 pagerank=2.8460e-02 url=www.lawfareblog.com/how-trumps-approach-middle-east-ignores-past-future-and-human-condition
-   INFO:root:rank=6 pagerank=2.5252e-02 url=www.lawfareblog.com/why-trump-cant-buy-greenland
-   INFO:root:rank=7 pagerank=2.2457e-02 url=www.lawfareblog.com/oral-argument-summary-qassim-v-trump
-   INFO:root:rank=8 pagerank=2.1462e-02 url=www.lawfareblog.com/dc-circuit-court-denies-trump-rehearing-mazars-case
-   INFO:root:rank=9 pagerank=2.1103e-02 url=www.lawfareblog.com/second-circuit-rules-mazars-must-hand-over-trump-tax-returns-new-york-prosecutors
+   INFO:root:rank=0 ranking=7.2172e-16 url=www.lawfareblog.com/will-we-ever-learn-what-bob-mueller-knows
+   INFO:root:rank=1 ranking=6.2432e-16 url=www.lawfareblog.com/tom-malinowski-responds-autonomous-lethal-systems
+   INFO:root:rank=2 ranking=6.0770e-16 url=www.lawfareblog.com/tom-malinowski-ups-game-lawfares-discussion-killer-robots
+   INFO:root:rank=3 ranking=6.0677e-16 url=www.lawfareblog.com/national-security-law-podcast-everyone-knows-it-saudi-arabia
+   INFO:root:rank=4 ranking=6.0127e-16 url=www.lawfareblog.com/original-understanding-malinowski
+   INFO:root:rank=5 ranking=5.9639e-16 url=www.lawfareblog.com/tom-malinowski-responds-lethal-autonomous-systems-part-ii
+   INFO:root:rank=6 ranking=5.7499e-16 url=www.lawfareblog.com/human-rights-watch-campaign-killer-robots-and-tom-malinowskis-response
+   INFO:root:rank=7 ranking=5.6720e-16 url=www.lawfareblog.com/clarification-tom-malinowski
+   INFO:root:rank=8 ranking=5.5289e-16 url=www.lawfareblog.com/what-mueller-knows-ensuring-special-counsel-report-worst-case-scenario
+   INFO:root:rank=9 ranking=5.4931e-16 url=www.lawfareblog.com/june-11-session-8-what-habeas-counsel-knows
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='iran'
-   INFO:root:rank=0 pagerank=6.6131e-02 url=www.lawfareblog.com/praise-presidents-iran-tweets
-   INFO:root:rank=1 pagerank=2.9199e-02 url=www.lawfareblog.com/how-us-iran-tensions-could-disrupt-iraqs-fragile-peace
-   INFO:root:rank=2 pagerank=1.7709e-02 url=www.lawfareblog.com/cyber-command-operational-update-clarifying-june-2019-iran-operation
-   INFO:root:rank=3 pagerank=1.4604e-02 url=www.lawfareblog.com/aborted-iran-strike-fine-line-between-necessity-and-revenge
-   INFO:root:rank=4 pagerank=8.4512e-03 url=www.lawfareblog.com/iranian-hostage-crisis-and-its-effect-american-politics
-   INFO:root:rank=5 pagerank=8.3989e-03 url=www.lawfareblog.com/parsing-state-departments-letter-use-force-against-iran
-   INFO:root:rank=6 pagerank=8.2581e-03 url=www.lawfareblog.com/announcing-united-states-and-use-force-against-iran-new-lawfare-e-book
-   INFO:root:rank=7 pagerank=8.0561e-03 url=www.lawfareblog.com/trump-moves-cut-irans-oil-revenues-whats-his-endgame
-   INFO:root:rank=8 pagerank=7.1939e-03 url=www.lawfareblog.com/us-names-iranian-revolutionary-guard-terrorist-organization-and-sanctions-international-criminal
-   INFO:root:rank=9 pagerank=5.9405e-03 url=www.lawfareblog.com/iran-shoots-down-us-drone-domestic-and-international-legal-implications
+   INFO:root:rank=0 ranking=2.2991e-07 url=www.lawfareblog.com/iranian-hostage-crisis-and-its-effect-american-politics
+   INFO:root:rank=1 ranking=1.9571e-07 url=www.lawfareblog.com/us-names-iranian-revolutionary-guard-terrorist-organization-and-sanctions-international-criminal
+   INFO:root:rank=2 ranking=1.0212e-07 url=www.lawfareblog.com/iranian-protesters-strike-heart-regimes-revolutionary-legitimacy
+   INFO:root:rank=3 ranking=9.3181e-08 url=www.lawfareblog.com/and-then-there-was-one-tehran-still-has-one-iranian-american-behind-bars
+   INFO:root:rank=4 ranking=6.8574e-08 url=www.lawfareblog.com/iranian-terrorism-victims-ask-court-block-release-iranian-assets-under-nuclear-deal
+   INFO:root:rank=5 ranking=6.3027e-08 url=www.lawfareblog.com/trump-wants-bigger-better-deal-iran-what-does-tehran-want
+   INFO:root:rank=6 ranking=5.8736e-08 url=www.lawfareblog.com/afghanistan-another-victory-tehran
+   INFO:root:rank=7 ranking=3.8606e-08 url=www.lawfareblog.com/what-has-iran-done-now-primer-recent-iranian-missile-tests-and-sanctions
+   INFO:root:rank=8 ranking=3.7935e-08 url=www.lawfareblog.com/two-further-notes-npt-and-iranian-legal-arguments
+   INFO:root:rank=9 ranking=3.7500e-08 url=www.lawfareblog.com/iranian-missile-launch-and-gray-ladys-confusion
    ```
 
    Task 1, part 3:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz
-   INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-   INFO:root:rank=1 pagerank=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
-   INFO:root:rank=2 pagerank=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
-   INFO:root:rank=3 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
-   INFO:root:rank=4 pagerank=8.4156e+00 url=www.lawfareblog.com/subscribe-lawfare
-   INFO:root:rank=5 pagerank=8.4156e+00 url=www.lawfareblog.com/masthead
-   INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/topics
-   INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
-   INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
-   INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+   INFO:root:rank=0 ranking=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
+   INFO:root:rank=1 ranking=8.4156e+00 url=www.lawfareblog.com/masthead
+   INFO:root:rank=2 ranking=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+   INFO:root:rank=3 ranking=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
+   INFO:root:rank=4 ranking=8.4156e+00 url=www.lawfareblog.com/topics
+   INFO:root:rank=5 ranking=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+   INFO:root:rank=6 ranking=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
+   INFO:root:rank=7 ranking=8.4156e+00 url=www.lawfareblog.com/support-lawfare
+   INFO:root:rank=8 ranking=8.4156e+00 url=www.lawfareblog.com/upcoming-events
+   INFO:root:rank=9 ranking=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2
-   INFO:root:rank=0 pagerank=4.6091e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-   INFO:root:rank=1 pagerank=2.9867e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
-   INFO:root:rank=2 pagerank=2.9669e+00 url=www.lawfareblog.com/opening-statement-david-holmes
-   INFO:root:rank=3 pagerank=2.0173e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
-   INFO:root:rank=4 pagerank=1.8769e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
-   INFO:root:rank=5 pagerank=1.8762e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
-   INFO:root:rank=6 pagerank=1.8693e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
-   INFO:root:rank=7 pagerank=1.7655e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
-   INFO:root:rank=8 pagerank=1.6807e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
-   INFO:root:rank=9 pagerank=9.8346e-01 url=www.lawfareblog.com/events
+   INFO:root:rank=0 ranking=4.6091e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+   INFO:root:rank=1 ranking=2.9867e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+   INFO:root:rank=2 ranking=2.9669e+00 url=www.lawfareblog.com/opening-statement-david-holmes
+   INFO:root:rank=3 ranking=2.0173e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
+   INFO:root:rank=4 ranking=1.8769e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
+   INFO:root:rank=5 ranking=1.8762e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
+   INFO:root:rank=6 ranking=1.8693e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
+   INFO:root:rank=7 ranking=1.7655e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
+   INFO:root:rank=8 ranking=1.6807e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
+   INFO:root:rank=9 ranking=9.8346e-01 url=www.lawfareblog.com/events
    ```
 
    Task 1, part 4:
@@ -570,7 +569,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=3 residual=0.5871003866195679
    DEBUG:root:i=4 residual=0.17524230480194092
    DEBUG:root:i=5 residual=0.05138478800654411
-   DEBUG:root:i=6 residual=0.01482726912945509
+   DEBUG:root:i=6 residual=0.014827270992100239
    DEBUG:root:i=7 residual=0.00416865898296237
    DEBUG:root:i=8 residual=0.001077273627743125
    DEBUG:root:i=9 residual=0.0001930922007886693
@@ -600,16 +599,16 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=33 residual=3.3059432098525576e-06
    DEBUG:root:i=34 residual=3.3041985716408817e-06
    DEBUG:root:i=35 residual=6.144799158391834e-08
-   INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-   INFO:root:rank=1 pagerank=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
-   INFO:root:rank=2 pagerank=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
-   INFO:root:rank=3 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
-   INFO:root:rank=4 pagerank=8.4156e+00 url=www.lawfareblog.com/subscribe-lawfare
-   INFO:root:rank=5 pagerank=8.4156e+00 url=www.lawfareblog.com/masthead
-   INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/topics
-   INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
-   INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
-   INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+   INFO:root:rank=0 ranking=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
+   INFO:root:rank=1 ranking=8.4156e+00 url=www.lawfareblog.com/masthead
+   INFO:root:rank=2 ranking=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+   INFO:root:rank=3 ranking=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
+   INFO:root:rank=4 ranking=8.4156e+00 url=www.lawfareblog.com/topics
+   INFO:root:rank=5 ranking=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+   INFO:root:rank=6 ranking=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
+   INFO:root:rank=7 ranking=8.4156e+00 url=www.lawfareblog.com/support-lawfare
+   INFO:root:rank=8 ranking=8.4156e+00 url=www.lawfareblog.com/upcoming-events
+   INFO:root:rank=9 ranking=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --alpha=0.99999
    DEBUG:root:computing indices
@@ -1192,7 +1191,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=575 residual=0.0003139353939332068
    DEBUG:root:i=576 residual=0.0003106312651652843
    DEBUG:root:i=577 residual=0.00031393259996548295
-   DEBUG:root:i=578 residual=0.00030732856248505414
+   DEBUG:root:i=578 residual=0.0003073285915888846
    DEBUG:root:i=579 residual=0.00030732445884495974
    DEBUG:root:i=580 residual=0.0003106270742136985
    DEBUG:root:i=581 residual=0.00031393111567012966
@@ -1496,7 +1495,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=879 residual=0.0003139368200208992
    DEBUG:root:i=880 residual=0.0003106314688920975
    DEBUG:root:i=881 residual=0.000313931202981621
-   DEBUG:root:i=882 residual=0.00030732856248505414
+   DEBUG:root:i=882 residual=0.0003073285915888846
    DEBUG:root:i=883 residual=0.00031062847119756043
    DEBUG:root:i=884 residual=0.00031062704510986805
    DEBUG:root:i=885 residual=0.0003139324835501611
@@ -1513,7 +1512,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=896 residual=0.00031062561902217567
    DEBUG:root:i=897 residual=0.0003073270490858704
    DEBUG:root:i=898 residual=0.0003139298059977591
-   DEBUG:root:i=899 residual=0.00030732856248505414
+   DEBUG:root:i=899 residual=0.0003073285915888846
    DEBUG:root:i=900 residual=0.0003139298059977591
    DEBUG:root:i=901 residual=0.0003073285333812237
    DEBUG:root:i=902 residual=0.00030732437153346837
@@ -1614,16 +1613,16 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=997 residual=0.0003172384458594024
    DEBUG:root:i=998 residual=0.0003139341133646667
    DEBUG:root:i=999 residual=0.0003139339096378535
-   INFO:root:rank=0 pagerank=1.0624e+01 url=www.lawfareblog.com/upcoming-events
-   INFO:root:rank=1 pagerank=1.0624e+01 url=www.lawfareblog.com/lawfare-job-board
-   INFO:root:rank=2 pagerank=1.0624e+01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-   INFO:root:rank=3 pagerank=1.0624e+01 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
-   INFO:root:rank=4 pagerank=1.0624e+01 url=www.lawfareblog.com/subscribe-lawfare
-   INFO:root:rank=5 pagerank=1.0624e+01 url=www.lawfareblog.com/topics
-   INFO:root:rank=6 pagerank=1.0624e+01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
-   INFO:root:rank=7 pagerank=1.0624e+01 url=www.lawfareblog.com/our-comments-policy
-   INFO:root:rank=8 pagerank=1.0624e+01 url=www.lawfareblog.com/documents-related-mueller-investigation
-   INFO:root:rank=9 pagerank=1.0624e+01 url=www.lawfareblog.com/masthead
+   INFO:root:rank=0 ranking=1.0624e+01 url=www.lawfareblog.com/lawfare-job-board
+   INFO:root:rank=1 ranking=1.0624e+01 url=www.lawfareblog.com/masthead
+   INFO:root:rank=2 ranking=1.0624e+01 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+   INFO:root:rank=3 ranking=1.0624e+01 url=www.lawfareblog.com/subscribe-lawfare
+   INFO:root:rank=4 ranking=1.0624e+01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+   INFO:root:rank=5 ranking=1.0624e+01 url=www.lawfareblog.com/documents-related-mueller-investigation
+   INFO:root:rank=6 ranking=1.0624e+01 url=www.lawfareblog.com/our-comments-policy
+   INFO:root:rank=7 ranking=1.0624e+01 url=www.lawfareblog.com/upcoming-events
+   INFO:root:rank=8 ranking=1.0624e+01 url=www.lawfareblog.com/topics
+   INFO:root:rank=9 ranking=1.0624e+01 url=www.lawfareblog.com/support-lawfare
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2
    DEBUG:root:computing indices
@@ -1707,16 +1706,16 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=76 residual=1.3939329619461205e-06
    DEBUG:root:i=77 residual=1.143126951319573e-06
    DEBUG:root:i=78 residual=9.235662901119213e-07
-   INFO:root:rank=0 pagerank=4.6091e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-   INFO:root:rank=1 pagerank=2.9867e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
-   INFO:root:rank=2 pagerank=2.9669e+00 url=www.lawfareblog.com/opening-statement-david-holmes
-   INFO:root:rank=3 pagerank=2.0173e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
-   INFO:root:rank=4 pagerank=1.8769e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
-   INFO:root:rank=5 pagerank=1.8762e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
-   INFO:root:rank=6 pagerank=1.8693e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
-   INFO:root:rank=7 pagerank=1.7655e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
-   INFO:root:rank=8 pagerank=1.6807e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
-   INFO:root:rank=9 pagerank=9.8346e-01 url=www.lawfareblog.com/events
+   INFO:root:rank=0 ranking=4.6091e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+   INFO:root:rank=1 ranking=2.9867e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+   INFO:root:rank=2 ranking=2.9669e+00 url=www.lawfareblog.com/opening-statement-david-holmes
+   INFO:root:rank=3 ranking=2.0173e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
+   INFO:root:rank=4 ranking=1.8769e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
+   INFO:root:rank=5 ranking=1.8762e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
+   INFO:root:rank=6 ranking=1.8693e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
+   INFO:root:rank=7 ranking=1.7655e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
+   INFO:root:rank=8 ranking=1.6807e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
+   INFO:root:rank=9 ranking=9.8346e-01 url=www.lawfareblog.com/events
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
    DEBUG:root:computing indices
@@ -1725,28 +1724,28 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=1 residual=4.125228404998779
    DEBUG:root:i=2 residual=3.987910032272339
    DEBUG:root:i=3 residual=3.2539920806884766
-   DEBUG:root:i=4 residual=2.479320526123047
+   DEBUG:root:i=4 residual=2.4793200492858887
    DEBUG:root:i=5 residual=1.9349069595336914
    DEBUG:root:i=6 residual=1.605706810951233
-   DEBUG:root:i=7 residual=1.392957091331482
-   DEBUG:root:i=8 residual=1.2307753562927246
-   DEBUG:root:i=9 residual=1.0955640077590942
+   DEBUG:root:i=7 residual=1.392957329750061
+   DEBUG:root:i=8 residual=1.230774998664856
+   DEBUG:root:i=9 residual=1.0955636501312256
    DEBUG:root:i=10 residual=0.984882652759552
-   DEBUG:root:i=11 residual=0.9026736617088318
-   DEBUG:root:i=12 residual=0.8521610498428345
-   DEBUG:root:i=13 residual=0.8327209949493408
-   DEBUG:root:i=14 residual=0.8394469022750854
-   DEBUG:root:i=15 residual=0.8648774027824402
-   DEBUG:root:i=16 residual=0.9013458490371704
-   DEBUG:root:i=17 residual=0.9424775838851929
-   DEBUG:root:i=18 residual=0.9836395978927612
+   DEBUG:root:i=11 residual=0.9026737213134766
+   DEBUG:root:i=12 residual=0.8521603941917419
+   DEBUG:root:i=13 residual=0.8327208757400513
+   DEBUG:root:i=14 residual=0.8394468426704407
+   DEBUG:root:i=15 residual=0.8648775219917297
+   DEBUG:root:i=16 residual=0.9013457298278809
+   DEBUG:root:i=17 residual=0.9424774646759033
+   DEBUG:root:i=18 residual=0.9836397171020508
    DEBUG:root:i=19 residual=1.0217621326446533
    DEBUG:root:i=20 residual=1.054983139038086
    DEBUG:root:i=21 residual=1.0823076963424683
    DEBUG:root:i=22 residual=1.1033427715301514
    DEBUG:root:i=23 residual=1.1180973052978516
    DEBUG:root:i=24 residual=1.1268420219421387
-   DEBUG:root:i=25 residual=1.130018711090088
+   DEBUG:root:i=25 residual=1.1300184726715088
    DEBUG:root:i=26 residual=1.1281501054763794
    DEBUG:root:i=27 residual=1.121811866760254
    DEBUG:root:i=28 residual=1.1115853786468506
@@ -1756,12 +1755,12 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=32 residual=1.0426288843154907
    DEBUG:root:i=33 residual=1.0207531452178955
    DEBUG:root:i=34 residual=0.9978127479553223
-   DEBUG:root:i=35 residual=0.9741222858428955
+   DEBUG:root:i=35 residual=0.9741223454475403
    DEBUG:root:i=36 residual=0.9499595761299133
    DEBUG:root:i=37 residual=0.9255528450012207
-   DEBUG:root:i=38 residual=0.9011116623878479
+   DEBUG:root:i=38 residual=0.9011090397834778
    DEBUG:root:i=39 residual=0.8767876625061035
-   DEBUG:root:i=40 residual=0.8527275919914246
+   DEBUG:root:i=40 residual=0.8527302145957947
    DEBUG:root:i=41 residual=0.8290461897850037
    DEBUG:root:i=42 residual=0.8058307766914368
    DEBUG:root:i=43 residual=0.7831431031227112
@@ -1770,7 +1769,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=46 residual=0.7187604308128357
    DEBUG:root:i=47 residual=0.6986168622970581
    DEBUG:root:i=48 residual=0.6791562438011169
-   DEBUG:root:i=49 residual=0.6603758335113525
+   DEBUG:root:i=49 residual=0.6603758931159973
    DEBUG:root:i=50 residual=0.6422728896141052
    DEBUG:root:i=51 residual=0.6248358488082886
    DEBUG:root:i=52 residual=0.6080604195594788
@@ -1840,7 +1839,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=116 residual=0.19055405259132385
    DEBUG:root:i=117 residual=0.1881248950958252
    DEBUG:root:i=118 residual=0.18575012683868408
-   DEBUG:root:i=119 residual=0.18340624868869781
+   DEBUG:root:i=119 residual=0.183406263589859
    DEBUG:root:i=120 residual=0.18111924827098846
    DEBUG:root:i=121 residual=0.17886823415756226
    DEBUG:root:i=122 residual=0.17665301263332367
@@ -1874,7 +1873,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=150 residual=0.12748035788536072
    DEBUG:root:i=151 residual=0.12608468532562256
    DEBUG:root:i=152 residual=0.12470552325248718
-   DEBUG:root:i=153 residual=0.12335333973169327
+   DEBUG:root:i=153 residual=0.12335334718227386
    DEBUG:root:i=154 residual=0.12200206518173218
    DEBUG:root:i=155 residual=0.12067783623933792
    DEBUG:root:i=156 residual=0.11937528103590012
@@ -1882,7 +1881,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=158 residual=0.11681988835334778
    DEBUG:root:i=159 residual=0.11555368453264236
    DEBUG:root:i=160 residual=0.11432235687971115
-   DEBUG:root:i=161 residual=0.11309707164764404
+   DEBUG:root:i=161 residual=0.11309707909822464
    DEBUG:root:i=162 residual=0.11189606040716171
    DEBUG:root:i=163 residual=0.11070097237825394
    DEBUG:root:i=164 residual=0.10952243208885193
@@ -1944,8 +1943,8 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=220 residual=0.061745744198560715
    DEBUG:root:i=221 residual=0.06114232912659645
    DEBUG:root:i=222 residual=0.06053674966096878
-   DEBUG:root:i=223 residual=0.059936683624982834
-   DEBUG:root:i=224 residual=0.05933945253491402
+   DEBUG:root:i=223 residual=0.05993668735027313
+   DEBUG:root:i=224 residual=0.059339456260204315
    DEBUG:root:i=225 residual=0.058753225952386856
    DEBUG:root:i=226 residual=0.05817250907421112
    DEBUG:root:i=227 residual=0.05759468302130699
@@ -1955,7 +1954,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=231 residual=0.0553574301302433
    DEBUG:root:i=232 residual=0.054812632501125336
    DEBUG:root:i=233 residual=0.0542760007083416
-   DEBUG:root:i=234 residual=0.05373712256550789
+   DEBUG:root:i=234 residual=0.05373712629079819
    DEBUG:root:i=235 residual=0.05321158468723297
    DEBUG:root:i=236 residual=0.05268102511763573
    DEBUG:root:i=237 residual=0.05216393619775772
@@ -1963,7 +1962,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=239 residual=0.051154203712940216
    DEBUG:root:i=240 residual=0.05064583569765091
    DEBUG:root:i=241 residual=0.050150878727436066
-   DEBUG:root:i=242 residual=0.04966393858194351
+   DEBUG:root:i=242 residual=0.04966394230723381
    DEBUG:root:i=243 residual=0.04917469993233681
    DEBUG:root:i=244 residual=0.048688411712646484
    DEBUG:root:i=245 residual=0.04821022227406502
@@ -2009,37 +2008,37 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=285 residual=0.03258778899908066
    DEBUG:root:i=286 residual=0.03226017951965332
    DEBUG:root:i=287 residual=0.03195104002952576
-   DEBUG:root:i=288 residual=0.03163681924343109
+   DEBUG:root:i=288 residual=0.03163682296872139
    DEBUG:root:i=289 residual=0.031328074634075165
-   DEBUG:root:i=290 residual=0.031029896810650826
+   DEBUG:root:i=290 residual=0.031029898673295975
    DEBUG:root:i=291 residual=0.030729321762919426
-   DEBUG:root:i=292 residual=0.030428899452090263
-   DEBUG:root:i=293 residual=0.03013906255364418
+   DEBUG:root:i=292 residual=0.030428901314735413
+   DEBUG:root:i=293 residual=0.03013906441628933
    DEBUG:root:i=294 residual=0.029846852645277977
    DEBUG:root:i=295 residual=0.029549606144428253
    DEBUG:root:i=296 residual=0.02926553785800934
    DEBUG:root:i=297 residual=0.02898688055574894
    DEBUG:root:i=298 residual=0.0287005752325058
-   DEBUG:root:i=299 residual=0.02841966599225998
+   DEBUG:root:i=299 residual=0.02841966785490513
    DEBUG:root:i=300 residual=0.028154537081718445
    DEBUG:root:i=301 residual=0.0278765931725502
-   DEBUG:root:i=302 residual=0.027606593444943428
-   DEBUG:root:i=303 residual=0.027334162965416908
+   DEBUG:root:i=302 residual=0.027606595307588577
+   DEBUG:root:i=303 residual=0.027334164828062057
    DEBUG:root:i=304 residual=0.027072366327047348
    DEBUG:root:i=305 residual=0.026807986199855804
    DEBUG:root:i=306 residual=0.026546470820903778
-   DEBUG:root:i=307 residual=0.026287714019417763
+   DEBUG:root:i=307 residual=0.026287715882062912
    DEBUG:root:i=308 residual=0.026036975905299187
-   DEBUG:root:i=309 residual=0.025788960978388786
-   DEBUG:root:i=310 residual=0.025530653074383736
+   DEBUG:root:i=309 residual=0.025788962841033936
+   DEBUG:root:i=310 residual=0.025530654937028885
    DEBUG:root:i=311 residual=0.025285571813583374
    DEBUG:root:i=312 residual=0.02504843845963478
    DEBUG:root:i=313 residual=0.024798471480607986
    DEBUG:root:i=314 residual=0.024564281105995178
-   DEBUG:root:i=315 residual=0.024319715797901154
+   DEBUG:root:i=315 residual=0.024319717660546303
    DEBUG:root:i=316 residual=0.024088390171527863
    DEBUG:root:i=317 residual=0.023849397897720337
-   DEBUG:root:i=318 residual=0.02362877130508423
+   DEBUG:root:i=318 residual=0.023628773167729378
    DEBUG:root:i=319 residual=0.02340046688914299
    DEBUG:root:i=320 residual=0.023167109116911888
    DEBUG:root:i=321 residual=0.02294435165822506
@@ -2070,7 +2069,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=346 residual=0.017986688762903214
    DEBUG:root:i=347 residual=0.01782180927693844
    DEBUG:root:i=348 residual=0.01764661632478237
-   DEBUG:root:i=349 residual=0.017479324713349342
+   DEBUG:root:i=349 residual=0.01747932657599449
    DEBUG:root:i=350 residual=0.01730434224009514
    DEBUG:root:i=351 residual=0.017134588211774826
    DEBUG:root:i=352 residual=0.016980687156319618
@@ -2540,7 +2539,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=816 residual=0.00018924013420473784
    DEBUG:root:i=817 residual=0.00018387088493909687
    DEBUG:root:i=818 residual=0.00017857072816696018
-   DEBUG:root:i=819 residual=0.00017842785746324807
+   DEBUG:root:i=819 residual=0.0001784278720151633
    DEBUG:root:i=820 residual=0.00017835818289313465
    DEBUG:root:i=821 residual=0.00017821330402512103
    DEBUG:root:i=822 residual=0.00017813389422371984
@@ -2703,7 +2702,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=979 residual=4.1663963202154264e-05
    DEBUG:root:i=980 residual=4.1649414924904704e-05
    DEBUG:root:i=981 residual=3.892551831086166e-05
-   DEBUG:root:i=982 residual=3.8914455217309296e-05
+   DEBUG:root:i=982 residual=3.89144588552881e-05
    DEBUG:root:i=983 residual=3.6389061278896406e-05
    DEBUG:root:i=984 residual=3.1133942684391513e-05
    DEBUG:root:i=985 residual=3.111424666712992e-05
@@ -2721,46 +2720,31 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    DEBUG:root:i=997 residual=3.087389632128179e-05
    DEBUG:root:i=998 residual=3.0866136512486264e-05
    DEBUG:root:i=999 residual=2.813212813634891e-05
-   INFO:root:rank=0 pagerank=5.2385e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
-   INFO:root:rank=1 pagerank=5.2385e+01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
-   INFO:root:rank=2 pagerank=7.9438e+00 url=www.lawfareblog.com/cost-using-zero-days
-   INFO:root:rank=3 pagerank=2.3700e+00 url=www.lawfareblog.com/lawfare-podcast-former-congressman-brian-baird-and-daniel-schuman-how-congress-can-continue-function
-   INFO:root:rank=4 pagerank=1.5529e+00 url=www.lawfareblog.com/events
-   INFO:root:rank=5 pagerank=1.1867e+00 url=www.lawfareblog.com/water-wars-increased-us-focus-indo-pacific
-   INFO:root:rank=6 pagerank=1.1867e+00 url=www.lawfareblog.com/water-wars-drill-maybe-drill
-   INFO:root:rank=7 pagerank=1.1867e+00 url=www.lawfareblog.com/water-wars-disjointed-operations-south-china-sea
-   INFO:root:rank=8 pagerank=1.1867e+00 url=www.lawfareblog.com/water-wars-us-china-divide-shangri-la
-   INFO:root:rank=9 pagerank=1.1867e+00 url=www.lawfareblog.com/water-wars-sinking-feeling-philippine-china-relations
-   ```
-
-   Task 2, part 1:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona'
-   INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
-   INFO:root:rank=1 pagerank=8.8867e-01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
-   INFO:root:rank=2 pagerank=1.8256e-01 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global
-   INFO:root:rank=3 pagerank=1.4907e-01 url=www.lawfareblog.com/brexit-not-immune-coronavirus
-   INFO:root:rank=4 pagerank=1.4907e-01 url=www.lawfareblog.com/rational-security-my-corona-edition
-   INFO:root:rank=5 pagerank=1.0729e-01 url=www.lawfareblog.com/trump-cant-reopen-country-over-state-objections
-   INFO:root:rank=6 pagerank=1.0199e-01 url=www.lawfareblog.com/britains-coronavirus-response
-   INFO:root:rank=7 pagerank=1.0199e-01 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
-   INFO:root:rank=8 pagerank=9.4298e-02 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
-   INFO:root:rank=9 pagerank=8.7207e-02 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+   INFO:root:rank=0 ranking=5.2385e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
+   INFO:root:rank=1 ranking=5.2385e+01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
+   INFO:root:rank=2 ranking=7.9438e+00 url=www.lawfareblog.com/cost-using-zero-days
+   INFO:root:rank=3 ranking=2.3700e+00 url=www.lawfareblog.com/lawfare-podcast-former-congressman-brian-baird-and-daniel-schuman-how-congress-can-continue-function
+   INFO:root:rank=4 ranking=1.5529e+00 url=www.lawfareblog.com/events
+   INFO:root:rank=5 ranking=1.1867e+00 url=www.lawfareblog.com/water-wars-increased-us-focus-indo-pacific
+   INFO:root:rank=6 ranking=1.1867e+00 url=www.lawfareblog.com/water-wars-drill-maybe-drill
+   INFO:root:rank=7 ranking=1.1867e+00 url=www.lawfareblog.com/water-wars-disjointed-operations-south-china-sea
+   INFO:root:rank=8 ranking=1.1867e+00 url=www.lawfareblog.com/water-wars-sinking-feeling-philippine-china-relations
+   INFO:root:rank=9 ranking=1.1867e+00 url=www.lawfareblog.com/water-wars-us-china-divide-shangri-la
    ```
 
    Task 2, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
-   INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
-   INFO:root:rank=1 pagerank=8.8867e-01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
-   INFO:root:rank=2 pagerank=1.8256e-01 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global
-   INFO:root:rank=3 pagerank=1.0729e-01 url=www.lawfareblog.com/trump-cant-reopen-country-over-state-objections
-   INFO:root:rank=4 pagerank=9.4298e-02 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
-   INFO:root:rank=5 pagerank=7.9633e-02 url=www.lawfareblog.com/fault-lines-foreign-policy-quarantined
-   INFO:root:rank=6 pagerank=7.5307e-02 url=www.lawfareblog.com/limits-world-health-organization
-   INFO:root:rank=7 pagerank=6.8115e-02 url=www.lawfareblog.com/chinatalk-dispatches-shanghai-beijing-and-hong-kong
-   INFO:root:rank=8 pagerank=6.4847e-02 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
-   INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-foreign-affairs-committee-holds-hearing-crisis-idlib
+   INFO:root:rank=0 ranking=0.0000e+00 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
+   INFO:root:rank=1 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
+   INFO:root:rank=2 ranking=0.0000e+00 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global
+   INFO:root:rank=3 ranking=0.0000e+00 url=www.lawfareblog.com/trump-cant-reopen-country-over-state-objections
+   INFO:root:rank=4 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
+   INFO:root:rank=5 ranking=0.0000e+00 url=www.lawfareblog.com/fault-lines-foreign-policy-quarantined
+   INFO:root:rank=6 ranking=0.0000e+00 url=www.lawfareblog.com/limits-world-health-organization
+   INFO:root:rank=7 ranking=0.0000e+00 url=www.lawfareblog.com/chinatalk-dispatches-shanghai-beijing-and-hong-kong
+   INFO:root:rank=8 ranking=0.0000e+00 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
+   INFO:root:rank=9 ranking=0.0000e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-holds-hearing-priorities-missile-defense
    ```
 
 1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
