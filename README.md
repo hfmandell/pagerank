@@ -506,7 +506,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    INFO:root:rank=8 pagerank=2.1878e-03 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
    INFO:root:rank=9 pagerank=2.0339e-03 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
    
-$ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
+   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
    INFO:root:rank=0 ranking=7.2172e-16 url=www.lawfareblog.com/will-we-ever-learn-what-bob-mueller-knows
    INFO:root:rank=1 ranking=6.2432e-16 url=www.lawfareblog.com/tom-malinowski-responds-autonomous-lethal-systems
    INFO:root:rank=2 ranking=6.0770e-16 url=www.lawfareblog.com/tom-malinowski-ups-game-lawfares-discussion-killer-robots
