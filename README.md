@@ -495,18 +495,18 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 1, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
-   INFO:root:rank=0 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
-   INFO:root:rank=1 ranking=0.0000e+00 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
-   INFO:root:rank=2 ranking=0.0000e+00 url=www.lawfareblog.com/britains-coronavirus-response
-   INFO:root:rank=3 ranking=0.0000e+00 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
-   INFO:root:rank=4 ranking=0.0000e+00 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
-   INFO:root:rank=5 ranking=0.0000e+00 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
-   INFO:root:rank=6 ranking=0.0000e+00 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
-   INFO:root:rank=7 ranking=0.0000e+00 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
-   INFO:root:rank=8 ranking=0.0000e+00 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
-   INFO:root:rank=9 ranking=0.0000e+00 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
-
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
+   INFO:root:rank=0 pagerank=4.5861e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+   INFO:root:rank=1 pagerank=4.0460e-03 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+   INFO:root:rank=2 pagerank=2.6116e-03 url=www.lawfareblog.com/britains-coronavirus-response
+   INFO:root:rank=3 pagerank=2.5390e-03 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
+   INFO:root:rank=4 pagerank=2.3557e-03 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
+   INFO:root:rank=5 pagerank=2.2895e-03 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
+   INFO:root:rank=6 pagerank=2.2727e-03 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
+   INFO:root:rank=7 pagerank=2.2520e-03 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
+   INFO:root:rank=8 pagerank=2.1878e-03 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
+   INFO:root:rank=9 pagerank=2.0339e-03 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
+   
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
    INFO:root:rank=0 ranking=7.2172e-16 url=www.lawfareblog.com/will-we-ever-learn-what-bob-mueller-knows
    INFO:root:rank=1 ranking=6.2432e-16 url=www.lawfareblog.com/tom-malinowski-responds-autonomous-lethal-systems
    INFO:root:rank=2 ranking=6.0770e-16 url=www.lawfareblog.com/tom-malinowski-ups-game-lawfares-discussion-killer-robots
@@ -2735,16 +2735,16 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 2, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
-   INFO:root:rank=0 ranking=0.0000e+00 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
-   INFO:root:rank=1 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
-   INFO:root:rank=2 ranking=0.0000e+00 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global
-   INFO:root:rank=3 ranking=0.0000e+00 url=www.lawfareblog.com/trump-cant-reopen-country-over-state-objections
-   INFO:root:rank=4 ranking=0.0000e+00 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
-   INFO:root:rank=5 ranking=0.0000e+00 url=www.lawfareblog.com/fault-lines-foreign-policy-quarantined
-   INFO:root:rank=6 ranking=0.0000e+00 url=www.lawfareblog.com/limits-world-health-organization
-   INFO:root:rank=7 ranking=0.0000e+00 url=www.lawfareblog.com/chinatalk-dispatches-shanghai-beijing-and-hong-kong
-   INFO:root:rank=8 ranking=0.0000e+00 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
-   INFO:root:rank=9 ranking=0.0000e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-holds-hearing-priorities-missile-defense
+   INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
+   INFO:root:rank=1 pagerank=8.8867e-01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
+   INFO:root:rank=2 pagerank=1.8256e-01 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global
+   INFO:root:rank=3 pagerank=1.0729e-01 url=www.lawfareblog.com/trump-cant-reopen-country-over-state-objections
+   INFO:root:rank=4 pagerank=9.4298e-02 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
+   INFO:root:rank=5 pagerank=7.9633e-02 url=www.lawfareblog.com/fault-lines-foreign-policy-quarantined
+   INFO:root:rank=6 pagerank=7.5307e-02 url=www.lawfareblog.com/limits-world-health-organization
+   INFO:root:rank=7 pagerank=6.8115e-02 url=www.lawfareblog.com/chinatalk-dispatches-shanghai-beijing-and-hong-kong
+   INFO:root:rank=8 pagerank=6.4847e-02 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
+   INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-foreign-affairs-committee-holds-hearing-crisis-idlib
    ```
 
 1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
